@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>NigauriMatsuri个人页面</title>
+    <title>个人博客 | NigauriMatsuri</title>
+    
+    <!--Icon-->
+    <link rel="icon" href="./images/icon/favicon.icon" type="image/x-icon"/>
 
     <!-- Bootstrap -->
     <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,17 +26,123 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title">&nbsp;&nbsp;<img src="images/icon/icon.png" alt="" /></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">主页面</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+            	<!-- 图片 -->
+            	<a data-toggle="tooltip" data-placement="top" title="Picture">
+                <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+              </a>
+              <!-- 视频 -->
+              <a data-toggle="tooltip" data-placement="top" title="Video">
+                <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+              </a>
+              <!-- 文档 -->
+              <a data-toggle="tooltip" data-placement="top" title="File">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+              </a>
+              <!-- 链接 -->
+              <a data-toggle="tooltip" data-placement="top" title="Link">
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/user/userimage.jpg" alt="">NigauriMatsuri&nbsp;
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="https://twitter.com/ku_guagua" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvtMSv32xfyU2yakOhG3jMw" target="_blank"><i class="fa fa-youtube-play"></i>&nbsp;&nbsp;YouTube</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100051096277978" target="_blank"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;Facebook</a></li>
+                    <li>
+                      <a href="page_404.html" target="_blank">
+                      	<i class="fa fa-steam-square"></i>
+                        <span class="badge bg-blue-sky pull-right">Loading · · ·</span>
+                        <span>&nbsp;Steam</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;" onclick="window.close();"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Exit</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
         <!-- page content -->
-        <div class="col-md-12">
-          <div class="col-middle">
-            <div class="text-center text-center">
-              <h1 class="error-number">404错误</h1>
-              <h2>网页主页面还在设计中</h2>
-              <p>其实就是懒</p>
+        <div class="right_col" role="main">
+          <div class="">
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Plain Page</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      Add content to the page ...
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+          	页面创建于 2020/10/7
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
       </div>
     </div>
 
@@ -45,7 +154,7 @@
     <script src="./vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="./vendors/nprogress/nprogress.js"></script>
-
+    
     <!-- Custom Theme Scripts -->
     <script src="./build/js/custom.min.js"></script>
   </body>
