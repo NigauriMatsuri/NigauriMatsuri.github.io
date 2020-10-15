@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1{
+	position: absolute;
+	font-size: 8em;
+	color: #222;
+	text-transform: uppercase;
+	border-bottom: 16px solid #222;
+	letter-spacing: 0.05em;
+	line-height: 1.2em;
+	transform: translate(-50%, -50%);
+	top: 40%;
+	left: 50%;
+}
+
+h1:before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #03A9F4;
+	overflow: hidden;
+	border-bottom: 16px solid #03A9F4;
+	animation: animate 3s ease-in forwards;
+}
+
+.loader{
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: loader 1s 3.3s ease-in forwards;
+	z-index: 99;
+}
+
+@keyframes animate{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+@keyframes loader{
+	to{left: -100%;}
+}
