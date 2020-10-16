@@ -8,45 +8,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>NigauriMatsuri个人页面</title>
-
-    <!-- Bootstrap -->
-    <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="./build/css/custom.min.css" rel="stylesheet">
+    
+    <!--Icon-->
+    <link rel="icon" href="./images/icon/favicon.icon" type="image/x-icon"/>
+  	<!-- 404页面 -->
+  	<style>
+  		body{
+  			background-color: rgb(0,120,215);
+  			font-family: Helvetica;
+  			color: #FFF;
+  		}
+  		.main{
+  			position: relative;
+  			left: 15%;
+  			margin-top: 5%;
+  			font-size: 18px;
+  		}
+  		div.main>h1{
+  			font-size: 108px;
+  			margin: 20px;
+  			margin-left: 0;
+  		}
+  		.sln{
+  			position: relative;
+  			font-size: 12px;
+  			left: 30%;
+  			top: 40px;
+  		}
+  		img{
+  			height: 150px;
+  			width: 150px;
+  			position: relative;
+  			top: -100px;
+  			left: 15%;
+  		}
+  		div.sln>a{
+  			color: #FFF;
+  		}
+  	</style>
   </head>
-
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <!-- page content -->
-        <div class="col-md-12">
-          <div class="col-middle">
-            <div class="text-center text-center">
-              <h1 class="error-number">404错误</h1>
-              <h2>该功能还在进行设计</h2>
-              <a href="index.html" style="color: #1ABB9C;">点此返回主页面</a>
-            </div>
-          </div>
-        </div>
-        <!-- /page content -->
-      </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="./vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="./vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="./vendors/nprogress/nprogress.js"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="./build/js/custom.min.js"></script>
+  <body>
+  	<div class="main">
+	  	<h1>:(</h1>
+	  	你访问的页面出现问题，我们无法找到目标文件。<br />
+	  	错误数据已经提交到服务器日志，现在你可以访问其他页面。<br /><br />
+	  	100%完成<br />
+  	</div>
+  	<div class="sln">
+  		有关此问题的详细信息和可能的解决方法，请访问<br /><br />
+  		<a href="https://www.nigauri.tk/">https://www.xxxxxxx.xx/</a><br /><br /><br /><br />
+  		如果希望去查找解决方法，请向他们提供一下信息:<br /><br />
+  		终止代码 : HTTP_ERROR_404
+  	</div>
+  	<img src="images/icon/404.png" alt="" />
   </body>
 </html>
