@@ -5,7 +5,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-h1{
+/*h1{
 	position: absolute;
 	font-size: 8em;
 	color: #222;
@@ -16,6 +16,19 @@ h1{
 	transform: translate(-50%, -50%);
 	top: 40%;
 	left: 50%;
+}*/
+
+h1{
+	font-family: tahoma;
+	font-size: 4em;
+	line-height: 1.2em;
+	font-weight: 300;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	letter-spacing: 0.05em;
+	transform: translate(-50%, -50%);
+	color: #333;
 }
 
 h1:before{
