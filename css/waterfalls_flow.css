@@ -1,18 +1,27 @@
 body {
-  margin: 4px;
+  margin: 0px;
   font-family: Helvetica;
   
   /* Centering & Limit Width */
   margin: auto;
-  width: 720px;
+  width: 1200px;
   background: #EFEEEE;
 }
+
+/*body{
+	padding: 30px;
+	font-family: sans-serif;
+	background: #EFEEEE;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}*/
 
 .masonry {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 1000px;
+  height: 1700px;
 }
 
 .item {
