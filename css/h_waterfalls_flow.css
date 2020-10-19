@@ -1,0 +1,115 @@
+body {
+  margin: 0px;
+  font-family: Helvetica;
+  
+  /* Centering & Limit Width */
+  margin: auto;
+  width: 1175px;
+  background: #EFEEEE;
+}
+
+/*body{
+	padding: 30px;
+	font-family: sans-serif;
+	background: #EFEEEE;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}*/
+
+.masonry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 950px;
+}
+
+.item {
+  position: relative;
+  width: 25%;
+  padding: 6px;
+  box-sizing: border-box;
+  counter-increment: item-counter;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+//数字格
+/*
+.item::after {
+  position: absolute;
+  display: block;
+  top: 6px;
+  left: 6px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #000;
+  color: #fff;
+  content: counter(item-counter);
+}
+*/
+
+.item:nth-child(4n+1) {
+  order: 1;
+}
+
+.item:nth-child(4n+2) {
+  order: 2;
+}
+
+.item:nth-child(4n+3) {
+  order: 3;
+}
+
+.item:nth-child(4n) {
+  order: 4;
+}
+
+.item .card{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #FFF;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.item .card .imgBx{
+	position: relative;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+.item .card .imgBx img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.item .card .content{
+	position: relative;
+	margin-top: -100px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.item .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -100px;
+	transition-delay: 0.3s;
+}
