@@ -4,7 +4,7 @@ body {
   
   /* Centering & Limit Width */
   margin: auto;
-  width: 1150px;
+  width: 1175px;
   background: #EFEEEE;
 }
 
@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 2350px;
+  height: 2850px;
 }
 
 .item {
