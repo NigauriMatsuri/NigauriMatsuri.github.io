@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 950px;
+  height: 1950px;
 }
 
 .item {
