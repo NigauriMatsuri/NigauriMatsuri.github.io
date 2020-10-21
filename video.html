@@ -11,15 +11,96 @@
 			
 		<!--Icon-->
     	<link rel="icon" href="./images/icon/favicon.icon" type="image/x-icon"/>
-		<!-- 文字加载动画 -->
-		<link rel="stylesheet" href="css/text-loading.css" />
+		<!-- 飞行标签目录 -->
+	    <link rel="stylesheet" href="css/flying_tab_menu.css" />
+	    <!-- Font Awesome -->
+    	<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css" />
+    	<!-- jQuery -->
+		<script src="js/jquery-1.12.4.js"></script>
+		<!-- 飞行标签目录 -->
+		<script src="js/flying_tab_menu.js"></script>
 	</head>
-	<body style="background: #EFEEEE;">
-		<div class="loader">
-			<h1 data-text="Loading...">Loading...</h1>
-		</div>
-		<h2 style="font-family: tahoma;font-weight: 300;position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);color: #333;">
-			PAGE LOADED 1000%(在做了在做了)
-		</h2>
+	<body>
+		<section class="page">
+			<section>
+				<ul class="tabs-controls">
+					<li class="tabs-controlsitem">
+						<a href="#" class="tabs-controls-link tabs-controls-link-active" data-id="1">Home</a>
+					</li>
+					<li class="tabs-controlsitem">
+						<a href="#" class="tabs-controls-link tabs-controls-link" data-id="2">Bilibili</a>
+					</li>
+					<li class="tabs-controlsitem">
+						<a href="#" class="tabs-controls-link tabs-controls-link" data-id="3">YouTube</a>
+					</li>
+					<li class="tabs-controlsitem">
+						<a href="#" class="tabs-controls-link tabs-controls-link" data-id="4">背景来源</a>
+					</li>
+					<li class="tabs-controlsitem">
+						<a href="#" class="tabs-controls-link tabs-controls-link" data-id="5">页面来源</a>
+					</li>
+				</ul>
+			</section>
+			<section class="cards-container">
+				<div class="card card-current" id="1">
+					<h1>视频主页</h1>
+					<br />
+					<p>
+						此页面为视频主页面<br /><br />
+						当前页面内容为测试阶段内容<br /><br />
+						最终页面内容请以实际视频主页面为主<br /><br />
+						最新更新日期为 2020/10/21 14:04:23
+					</p>
+					<div class="social">
+						<a href="index.html"><i class="fa fa-home"></i></a>
+						<a href="normal_picture.html"><i class="fa fa-image"></i></a>
+						<a href="video.html"><i class="fa fa-film"></i></a>
+					</div>
+				</div>
+				<div class="card" id="2">
+					<h1>【Among Us动画/中文字幕】这是我见过的最...</h1>
+					<br />
+					<iframe src="//player.bilibili.com/player.html?aid=499773531&bvid=BV19K411P7N5&cid=241487108&page=1" width="100%" height="70%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+					<div class="social">
+						<a href="https://www.bilibili.com/video/BV19K411P7N5/" target="_blank"><i class="fa">Bili</i></a>
+						<a href="https://youtu.be/zGen5De-byE"><i class="fa fa-youtube-play"></i></a>
+					</div>
+				</div>
+				<div class="card" id="3">
+					<h2>「中国限定？」「先行販売？」「パンダと同じ？」仮面ライダーセイバー 広州 CICF EXPO...</h2>
+					<br />
+					<iframe width="510px" height="220px" src="https://www.youtube.com/embed/sYO9qz2JT-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+					<div class="social">
+						<a href="https://twitter.com/k2eizo/status/1317378243025006597/" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtu.be/sYO9qz2JT-M" target="_blank"><i class="fa fa-youtube-play"></i></a>
+					</div>
+				</div>
+				<div class="card" id="4">
+					<h1>廃墟</h1>
+					<br />
+					<img src="images/img/20190723164801.jpg" width="80%" height="auto" />
+					<div class="social">
+						<a href="https://twitter.com/lemon_mito/status/1153582464016642048" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.pixiv.net/artworks/75878503" target="_blank"><i class="fa">Pixiv</i></a>
+					</div>
+				</div>
+				<div class="card" id="5">
+					<h1>CSS3 and html,js实现飞行标签导航条实现飞行标签效果</h1>
+					<br />
+					<iframe src="//player.bilibili.com/player.html?aid=754316252&bvid=BV1Ak4y127jA&cid=227558567&page=1" width="100%" height="70%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+					<div class="social">
+						<a href="https://www.bilibili.com/video/BV1Ak4y127jA/" target="_blank"><i class="fa">Bili</i></a>
+					</div>
+				</div>
+				<!--<div class="card" id="6">
+					<h1>CSS3 and html,js实现飞行标签导航条实现飞行标签效果</h1>
+					<br />
+					<iframe src="//player.bilibili.com/player.html?aid=754316252&bvid=BV1Ak4y127jA&cid=227558567&page=1" width="100%" height="70%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+					<div class="social">
+						<a href="https://www.bilibili.com/video/BV1Ak4y127jA/" target="_blank"><i class="fa">Bili</i></a>
+					</div>
+				</div>-->
+			</section>
+		</section>
 	</body>
 </html>
