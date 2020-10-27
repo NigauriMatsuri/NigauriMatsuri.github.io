@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>NigauriMatsuri个人页面</title>
-    
-    <!--Icon-->
-    <link rel="icon" href="./images/icon/favicon.icon" type="image/x-icon"/>
-  	<!-- 404页面 -->
-  	<style>
-  		body{
-  			background-color: rgb(0,120,215);
-  			font-family: Helvetica;
-  			color: #FFF;
-  		}
-  		.main{
-  			position: relative;
-  			left: 15%;
-  			margin-top: 5%;
-  			font-size: 18px;
-  		}
-  		div.main>h1{
-  			font-size: 108px;
-  			margin: 20px;
-  			margin-left: 0;
-  		}
-  		.sln{
-  			position: relative;
-  			font-size: 12px;
-  			left: 30%;
-  			top: 40px;
-  		}
-  		img{
-  			height: 150px;
-  			width: 150px;
-  			position: relative;
-  			top: -100px;
-  			left: 15%;
-  		}
-  		div.sln>a{
-  			color: #FFF;
-  		}
-  	</style>
-  </head>
-  <body>
-  	<div class="main">
-	  	<h1>:(</h1>
-	  	你访问的页面出现问题，我们无法找到目标文件。<br />
-	  	错误数据已经提交到服务器日志，现在你可以访问其他页面。<br /><br />
-	  	100%完成<br />
-  	</div>
-  	<div class="sln">
-  		有关此问题的详细信息和可能的解决方法，请访问<br /><br />
-  		<a href="https://www.nigauri.tk/">https://www.xxxxxxx.xx/</a><br /><br /><br /><br />
-  		如果希望去查找解决方法，请向他们提供一下信息:<br /><br />
-  		终止代码 : HTTP_ERROR_404
-  	</div>
-  	<img src="images/icon/404.png" alt="" />
-  </body>
+  	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <!-- Meta, title, CSS, favicons, etc. -->
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	    <title>个人博客 | NigauriMatsuri</title>
+			
+			<!--Icon-->
+	    <link rel="icon" href="images/icon/favicon.icon" type="image/x-icon"/>
+			<style type="text/css">
+				body{
+					display: flex;
+					height: 100%;
+					background-color: #333;
+				}
+				.word{
+					margin: auto;
+					color: white;
+					margin-top: 300px;
+					font: 700 normal 3.5555em 'tahoma';
+					text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324, 4px 8px #222324, 5px 10px #222324, 7px 12px #222324, 7px 14px #222324, 8px 15px #222324, 10px 20px #222324;
+					z-index: ;
+				}
+			</style>
+  	</head>
+	<body>
+		<div class="word"></div>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript">
+			var words = ['404 Error','当前访问页面不存在','或页面正在设计中','其他页面请返回主页','主页面请自行返回'],
+			part,
+			i = 0,
+			offset = 0,
+			len = words.length,
+			forwards = true,
+			skip_count = 0,
+			skip_delay = 5,
+			speed = 150;
+			var wordflick = function(){
+				setInterval(function(){
+					if (forwards) {
+						if (offset >= words[i].length) {
+							++skip_count;
+							if (skip_count == skip_delay) {
+								forwards = false;
+								skip_count = 0;
+							}
+						}
+					} else {
+						if (offset == 0) {
+							forwards = true;
+							i++;
+							offset = 0;
+							if (i >= len) {
+								i = 0;
+							}
+						}
+					}
+					part = words[i].substr(0, offset);
+					if (skip_count == 0) {
+						if (forwards) {
+							offset++;
+						} else {
+							offset--;
+						}
+					}
+					$('.word').text(part);
+				},speed);
+			};
+			$(document).ready(function(){
+				wordflick();
+			});
+		</script>
+	</body>
 </html>
